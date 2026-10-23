@@ -5,7 +5,7 @@ import { exitCode, renderJson, renderText } from "./report.js";
 import { scanPath } from "./scan.js";
 import { PHP2SHELL } from "./types.js";
 
-const USAGE = `php2shell-scan [options] [path]
+const USAGE = `php2shell-scanner [options] [path]
 
 Scans a codebase for PHP2Shell exposure (${PHP2SHELL.cves.join(" / ")}):
 PHP version pins in composer / Dockerfile / CI files, plus attack-surface

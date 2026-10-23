@@ -19,10 +19,10 @@ npx php2shell-scanner /path/to/project
 ## Scan a project
 
 ```bash
-php2shell-scan [options] [path]
+php2shell-scanner [options] [path]
 ```
 
-`path` defaults to the current directory.
+`path` defaults to the current directory. `php2shell-scan` is a shorter alias for the same command.
 
 | Option | Effect |
 | --- | --- |
@@ -43,7 +43,7 @@ Exit codes:
 The exit code makes the scanner usable as a CI gate:
 
 ```bash
-php2shell-scan . || echo "blocked: unpatched PHP pin detected"
+php2shell-scanner . || echo "blocked: unpatched PHP pin detected"
 ```
 
 ## What it detects
