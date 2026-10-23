@@ -1,0 +1,5 @@
+services:
+  app:
+    image: php:latest
+    ports:
+      - "8080:80"

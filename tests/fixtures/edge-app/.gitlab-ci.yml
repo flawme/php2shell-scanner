@@ -1,0 +1,6 @@
+stages:
+  - test
+test:
+  image: php:8.3
+  script:
+    - vendor/bin/phpunit

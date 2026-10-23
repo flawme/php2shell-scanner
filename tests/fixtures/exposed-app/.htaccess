@@ -1,0 +1,2 @@
+php_value session.upload_progress.enabled 1
+php_value memory_limit 32M

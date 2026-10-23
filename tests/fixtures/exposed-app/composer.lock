@@ -1,0 +1,8 @@
+{
+  "content-hash": "deadbeefdeadbeef",
+  "platform": {
+    "php": "8.3.2"
+  },
+  "packages": [],
+  "packages-dev": []
+}

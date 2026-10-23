@@ -1,0 +1,12 @@
+{
+  "name": "acme/exposed-app",
+  "require": {
+    "php": "^8.2",
+    "ext-json": "*"
+  },
+  "config": {
+    "platform": {
+      "php": "8.2.20"
+    }
+  }
+}
