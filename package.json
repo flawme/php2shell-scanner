@@ -1,6 +1,6 @@
 {
   "name": "php2shell-scanner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scans a codebase for PHP2Shell exposure (CVE-2026-109618 / CVE-2026-109619): PHP version pins across composer/Docker/CI plus attack-surface amplifiers",
   "type": "module",
   "files": [
