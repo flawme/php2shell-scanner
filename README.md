@@ -1,5 +1,7 @@
 # php2shell-scanner
 
+[![CI](https://github.com/flawme/php2shell-scanner/actions/workflows/ci.yml/badge.svg)](https://github.com/flawme/php2shell-scanner/actions/workflows/ci.yml)
+
 Static scanner for PHP2Shell (CVE-2026-109618 / CVE-2026-109619) — the PHP engine RCE disclosed 2026-10-21. Both bugs live in the PHP engine itself, so any application running an unpatched PHP build is exposed, even a hello world: the fix is upgrading PHP, not changing application code. This tool scans a codebase for every declared PHP version and reports which deployments can resolve to an unpatched build, plus which attack-surface amplifiers are present.
 
 ## Install
