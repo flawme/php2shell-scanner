@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "Scans a codebase for PHP2Shell exposure (CVE-2026-109618 / CVE-2026-109619): PHP version pins across composer/Docker/CI plus attack-surface amplifiers",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "bin": {
     "php2shell-scan": "dist/cli.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && node --test \"dist/*.test.js\"",
-    "scan": "node dist/cli.js"
+    "scan": "node dist/cli.js",
+    "prepublishOnly": "npm test"
   },
   "engines": {
     "node": ">=18"
@@ -18,15 +22,28 @@
     "php",
     "security",
     "scanner",
+    "cve",
     "cve-2026-109618",
     "cve-2026-109619",
-    "php2shell"
+    "php2shell",
+    "rce",
+    "vulnerability-scanner",
+    "composer",
+    "docker",
+    "github-actions",
+    "static-analysis"
   ],
   "license": "MIT",
   "funding": {
     "type": "kofi",
     "url": "https://ko-fi.com/flawme"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flawme/php2shell-scanner.git"
+  },
+  "homepage": "https://github.com/flawme/php2shell-scanner#readme",
+  "bugs": "https://github.com/flawme/php2shell-scanner/issues",
   "devDependencies": {
     "@types/node": "^24.0.0",
     "typescript": "^5.9.2"
